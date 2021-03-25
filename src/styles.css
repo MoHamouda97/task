@@ -1,1 +1,11 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* mat */
+
+.mat-card-image{
+    width: auto !important;
+}
+
+.mat-card-image:first-child{margin-top: 0 !important;}
+
+.mat-card{margin-bottom: 15px;}

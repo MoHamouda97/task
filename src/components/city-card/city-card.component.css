@@ -3,20 +3,23 @@
 .card-component h2,
 .card-component .city{margin-bottom: 15px;}
 
-.card-component .city{
-    box-shadow: 1px 1px 5px rgb(0 0 0 / 30%);
-    padding: 3px;
-    border-radius: 5px;
-}
-
 .card-component .city .city-header{
     margin-bottom: 15px;
     height: 145px;
 }
 
-.card-component .city .city-header .city-flg{margin-bottom: 10px;}
+.card-component .city .city-header .city-flg{
+    margin-bottom: 10px;    
+}
 
-.card-component .city .city-header .city-flg .city-nation{margin-left: 10px;}
+.card-component .city .city-header .city-img{
+    width: 100%;
+}
+
+.card-component .city .city-header .city-flg .city-nation{
+    margin-left: 10px;
+    display: inline-block;
+}
 
 .card-component .city .city-body .city-name{margin-bottom: 5px;}
 

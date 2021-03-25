@@ -5,25 +5,27 @@
                 <h2 class="text-center">City Task</h2>
             </div>
             <div class="col-lg-3 col-md-4" *ngFor="let city of cities">
-                <div class="city">
-                    <div class="city-header">
-                        <div class="city-flg">
-                            <img [src]="city.NationFlag" mat-card-avatar>
-                            <mat-card-title class="city-nation">{{city.Nation}}</mat-card-title>
+                <mat-card>
+                    <div class="city">
+                        <div class="city-header">
+                            <div class="city-flg">
+                                <img [src]="city.NationFlag" mat-card-avatar>
+                                <mat-card-title class="city-nation">{{city.Nation}}</mat-card-title>
+                            </div>
+                            <div class="cit-img text-center">
+                                <img [src]="city.CityImage" mat-card-image> 
+                            </div>
                         </div>
-                        <div class="cit-img">
-                            <img [src]="city.CityImage" mat-card-image> 
+                        <div class="city-body">
+                            <div class="city-name">
+                                <mat-card-subtitle>{{city.CityName}}</mat-card-subtitle>
+                            </div>
+                            <div class="city-description">
+                                <mat-card-content>{{city.Description}}</mat-card-content>
+                            </div>
                         </div>
-                    </div>
-                    <div class="city-body">
-                        <div class="city-name">
-                            <mat-card-subtitle>{{city.CityName}}</mat-card-subtitle>
-                        </div>
-                        <div class="city-description">
-                            <mat-card-content>{{city.Description}}</mat-card-content>
-                        </div>
-                    </div>
-                </div> 
+                    </div> 
+                </mat-card>
             </div>
         </div>
     
